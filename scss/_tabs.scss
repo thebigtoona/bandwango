@@ -1,0 +1,26 @@
+// tab section
+.tabs {
+  color: white;
+  text-transform: uppercase;
+
+  // ul that holds the tabs
+  .tab-list {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    padding: 0;
+
+    // individual tabs
+    .tab {
+      width: 50%;
+      padding: 0rem .5rem 1rem;
+      transition: .1s ease-in-out;
+
+      // styles when tab is selected
+      &.active {
+        color: $tab-highlight;
+        border-bottom: 3px solid $tab-highlight;
+      }
+    }
+  }
+}

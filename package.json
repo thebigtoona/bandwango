@@ -1,0 +1,14 @@
+{
+  "name": "bandwango",
+  "version": "1.0.0",
+  "description": "prototype of a user facing passport",
+  "main": "main.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Tina Mergens",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "latest"
+  }
+}

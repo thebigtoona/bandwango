@@ -1,0 +1,37 @@
+.info {
+  transition: display .1s ease-in-out;
+  background: white;
+  display: none;
+  min-height: 55vh;
+  ul {
+    margin-top: -1rem;
+    background: inherit;
+    list-style: none;
+    padding: 1rem 1.25rem;
+  }
+  // list item
+  &-item {
+    margin: 1rem 0;
+    // resetting margins on these elements
+    h2, p {
+      margin: 0;
+      font-size: .85rem;
+    }
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid $circle-light;
+      margin: .25em 0;
+      padding: 0;
+    }
+    // heading
+    &-title {
+      text-transform: uppercase;
+    }
+    // description
+    &-desc {
+      color: $circle-dark;
+    }
+  }
+}

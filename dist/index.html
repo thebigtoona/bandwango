@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--  fonts and icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+  <!--  main stylesheet -->
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Passport</title>
+</head>
+<body>
+
+<!-- heading and navbar -->
+<header>
+  <nav class="navbar">
+    <a href="#"><i class="fa fa-angle-left"></i> Back</a>
+  </nav>
+</header>
+
+<!--  main content and wrapper -->
+<div class="wrapper">
+<main>
+
+  <!--  title and description of pass -->
+  <section class="passport-heading">
+    <h1 class="passport-title">Eureka Heights Brew Co</h1>
+    <p class="passport-desc">Flight of (5) 4oz Pours of Any of Our Beers</p>
+  </section>
+
+  <!--  the tab navigation -->
+  <section class="tabs">
+    <ul class="tab-list">
+      <li class="tab" id="info-tab" data-target="#info-section">Info</li>
+      <li class="tab active" id="ticket-tab" data-target="#ticket-section">Tickets</li>
+    </ul>
+  </section>
+
+  <!--  section to hold tickets -->
+  <section id="ticket-section">
+    <ul class="tickets">
+      <!--  ticket content is here.  (normally dynamic, static in this example) -->
+      <li class="ticket">
+          <div class="ticket-info">
+            <p class="ticket-title">Adult - Monir Parikh</p>
+            <p class="ticket-desc">Valid Until Jan 21 2018, 4:42 pm</p>
+          </div>
+          <div class="circle"></div>
+      </li>
+
+      <li class="ticket">
+          <div class="ticket-info">
+            <p class="ticket-title">Adult - Monir Parikh</p>
+            <p class="ticket-desc">Valid Until Jan 21 2018, 4:42 pm</p>
+          </div>
+          <div class="circle"></div>
+      </li>
+
+      <li class="ticket">
+          <div class="ticket-info">
+            <p class="ticket-title">Adult - Monir Parikh</p>
+            <p class="ticket-desc">Valid Until Jan 21 2018, 4:42 pm</p>
+          </div>
+          <div class="circle"></div>
+      </li>
+
+      <li class="ticket">
+          <div class="ticket-info">
+            <p class="ticket-title">Adult - Monir Parikh</p>
+            <p class="ticket-desc">Valid Until Jan 21 2018, 4:42 pm</p>
+          </div>
+          <div class="circle redeemed"><span><i class="fa fa-check"></i></span></div>
+      </li>
+
+      <li class="ticket">
+          <div class="ticket-info">
+            <p class="ticket-title">Adult - Monir Parikh</p>
+            <p class="ticket-desc expired">Valid Until Jan 21 2018, 4:42 pm</p>
+          </div>
+          <div class="circle expired"><span><i class="fa fa-close"></i></span></div>
+      </li>
+    </ul>
+  </section>
+  <section class="info" id='info-section'>
+    <ul>
+      <li class="info-item">
+        <h2 class="info-item-title">A Heading</h2>
+        <hr>
+        <p class="info-item-desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla error iusto aut, quisquam, dicta natus nemo magnam deserunt distinctio! </p>
+      </li>
+
+      <li class="info-item">
+        <h2 class="info-item-title">A Heading</h2>
+        <hr>
+        <p class="info-item-desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nulla error iusto aut, quisquam, dicta natus nemo magnam deserunt distinctio! </p>
+      </li>
+    </ul>
+  </section>
+</main>
+</div><!-- end wrapper -->
+
+<!--  footer -->
+<footer class="sticky-footer">
+  <button class="confirmation-btn">
+    Confirm Redemptions
+  </button>
+</footer>
+
+  <!--  scripts -->
+  <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+</html>

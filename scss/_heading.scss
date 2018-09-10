@@ -1,0 +1,23 @@
+// heading and title
+.passport {
+  
+  // section styles
+  &-heading {
+    color: white;
+    text-align: center;
+    padding: 2.5rem 4rem 1rem;
+  }
+
+  // company name
+  &-title {
+    margin-bottom: .25rem;
+    font-size: .85rem;
+    font-weight: 400;
+  }
+
+  // description of the deal
+  &-desc {
+    font-size: 1.25rem;
+    margin-top: .5rem;
+  }
+}

@@ -1,0 +1,77 @@
+// ticket section
+#ticket-section {
+  margin-bottom: 100px;
+  transition: display .1s ease-in-out;
+  // ul that holds the tickets
+  .tickets {
+    list-style: none;
+    margin-top: 0rem;
+    padding: 0 .5rem;
+
+    // ticket styles
+    .ticket {
+      display: flex;
+      flex: wrap;
+      background-color: white;
+      padding: 1rem .75rem;
+      margin: .5rem 0;
+
+      p {
+        margin: .25rem 0;
+        font-size: .85rem;
+        &.expired {
+          color: $danger-red;
+        }
+      }
+
+      // holds the ticket text
+      &-info {
+        width: 80%;
+      }
+
+      // ticket heading/name
+      &-heading {
+        font-weight: bold;
+      }
+
+      // description of date valid
+      &-desc {
+        font-weight: 300;
+        color: $circle-dark;
+      }
+
+      // selection touch target
+      .circle {
+        width: 20%;
+        transition: .1s ease-in-out;
+        background: $circle-light;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        color: white;
+        text-align: center;
+
+        // color indicators based on whether ticket is expired/selected/redeemed
+        &.expired {
+          background-color: $danger-red;
+        }
+        &.redeemed {
+          background-color: $circle-dark;
+        }
+        &.selected {
+          background-color: $success-green;
+        }
+
+        // holds the icon if there is one
+        span {
+          height: 20px;
+          width: 20px;
+          font-size: 1.25rem;
+          position: relative;
+          top: 10px;
+        }
+      }
+
+    }
+  }
+}

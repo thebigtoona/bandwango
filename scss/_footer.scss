@@ -1,0 +1,30 @@
+// sticky footer with confirmation button
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  padding: 1rem 0;
+
+  // confirmation button styles
+  .confirmation-btn {
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    color: $circle-dark;
+    font-size: .9rem;
+    border: 1px solid $circle-light;
+    border-radius: 30px;
+    width: 65%;
+    height: 50px;
+    background-color: inherit;
+
+    // the button if tickets have been selected
+    &.selected {
+      background-color: $success-green;
+      color: white;
+      border-color: white;
+    }
+  }
+}

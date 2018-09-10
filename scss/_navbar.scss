@@ -1,0 +1,17 @@
+// top navigation
+.navbar {
+  height: 1.25rem;
+  padding: .5rem;
+  background-color: white;
+  max-width: 100vw;
+  font-size: .85rem;
+
+  // link styles
+  a {
+    padding: .5rem;
+    color: #222;
+    &:visited {
+      color: #222;
+    }
+  }
+}
